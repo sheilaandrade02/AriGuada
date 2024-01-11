@@ -1,0 +1,59 @@
+<main>
+  <header class="intro">
+    <nav class="nav">
+      <a [routerLink]="['']" class="nav_items">SOBRE MI</a>
+      <a [routerLink]="['eventos']" class="nav_items">EVENTOS</a>
+      <a [routerLink]="['musica']" class="nav_items">MÚSICA</a>
+      <a [routerLink]="['tienda']" class="nav_items">TIENDA</a>
+      <img class="brand_logo" src="/assets/LogoAri.png" alt="logo" aria-hidden="true">
+      <div class="nav_media">
+        <a href="https://www.youtube.com/@ari_guada" target="_blank">
+          <img class="media_container" src="/assets/youtube.png" alt="media" aria-hidden="true">
+        </a>
+
+        <a href="https://www.instagram.com/ari_guada/" target="_blank">
+          <img class="media_container" src="/assets/instagram.png" alt="media" aria-hidden="true">
+        </a>
+
+        <a href="https://open.spotify.com/artist/7M3b2lGkHbErIuR3iCg6Ms?si=7sWIw1xrQEu9u1WldJdmhw" target="_blank">
+          <img class="media_container" src="/assets/spotify.png" alt="media" aria-hidden="true">
+        </a>
+
+        <ng-container *ngIf="isAuthenticated">
+          <span>{{ authenticatedUser }}</span>
+        </ng-container>
+
+        <a [routerLink]="['iniciar-session']">
+          <img class="media_container" src="/assets/usuario.png" alt="media" aria-hidden="true">
+        </a>
+
+        <a [routerLink]="['carrito']">
+          <img class="media_container" src="/assets/carrito.png" alt="media" aria-hidden="true">
+        </a>
+      </div>
+
+    </nav>
+  </header>
+  <section class="content">
+
+      <router-outlet></router-outlet>
+  </section>
+  <footer>
+    <div class="footer">
+      <!-- Contenido del footer -->
+      <div class="footer-icons">
+        <a href="https://www.youtube.com/@ari_guada" target="_blank">
+          <img class="footer_container" src="/assets/youtube.png" alt="media" aria-hidden="true">
+        </a>
+
+        <a href="https://www.instagram.com/ari_guada/" target="_blank">
+          <img class="footer_container" src="/assets/instagram.png" alt="media" aria-hidden="true">
+        </a>
+
+        <a href="https://open.spotify.com/artist/7M3b2lGkHbErIuR3iCg6Ms?si=7sWIw1xrQEu9u1WldJdmhw" target="_blank">
+          <img class="footer_container" src="/assets/spotify.png" alt="media" aria-hidden="true">
+        </a>
+      </div>
+    </div>
+  </footer>
+</main>

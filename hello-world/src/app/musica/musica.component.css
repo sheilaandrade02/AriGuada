@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+body {
+font-family: 'Rubik Bubbles', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+.grid_ep {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw; /* Usando unidades relativas */
+  max-width: 1200px; /* Ancho máximo para evitar que el contenido se extienda demasiado */
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 110px;
+
+}
+.music_item{
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 2vw; /* Usando unidades relativas */
+  overflow: hidden;
+}
+
+.musica_hover{
+  position:absolute;
+  background: rgba(110, 110, 110, 0.527);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* para que el texto este centrado*/
+  transform: translateX(100%);
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+
+.music_item:hover .musica_hover{
+  transform: translateX(0);
+}
+.elemento_m {
+  width: 100%;
+  height: auto;
+  border-radius: 2vw; /* Usando unidades relativas */
+}
+
+.playlist-container {
+  text-align: center;
+  margin-top: 2vw; /* Usando unidades relativas */
+}

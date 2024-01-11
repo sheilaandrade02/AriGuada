@@ -1,0 +1,10 @@
+##reuperar el hola mundo
+GET http://localhost:3002
+
+### reuperar todas las camisetas
+GET http://localhost:3002/camisetas
+
+### Decrementar el stock de una talla específica de una camiseta
+PATCH http://localhost:3002/camisetas/decrementar-stock/blanca/M
+
+

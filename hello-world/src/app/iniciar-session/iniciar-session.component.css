@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 2.5em; /* Tamaño de fuente más grande */
+  margin-bottom: 20px;
+  color: #333; /* Texto más oscuro */
+}
+
+.sesion_user {
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px; /* Esquinas más redondeadas */
+  background-color: #f0f0f0; /* Gris claro más suave */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #555; /* Gris medio más suave */
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Gris claro más suave */
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  background-color: #e99732; /* Verde más vivo */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.2em;
+}
+
+input[type="submit"]:hover {
+  background-color: #c87a1b; /* Verde más oscuro al pasar el mouse */
+}
+
+#errors_formulari {
+  color: #d9534f; /* Rojo más suave */
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.registro_user {
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #428bca; /* Azul más vivo */
+  font-size: 1.2em;
+}
+
+.registro_user:hover {
+  text-decoration: underline;
+  color: #2a6496; /* Azul más oscuro al pasar el mouse */
+}

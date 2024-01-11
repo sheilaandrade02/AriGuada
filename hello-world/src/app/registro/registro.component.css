@@ -1,0 +1,66 @@
+
+.users_registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.8); /* Negro con 80% de opacidad */
+}
+
+form {
+  width: 300px;
+  padding: 15px; /* Reducimos el espacio interno */
+  border-radius: 15px;
+  background-color: #ffeded; /* Rosa claro */
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2); /* Sombra roja suave */
+}
+
+label {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #4f4f4f; /* Gris oscuro */
+}
+
+input {
+  width: 100%;
+  padding: 10px; /* Reducimos el tamaño del padding */
+  margin-bottom: 15px; /* Reducimos el espacio entre elementos */
+  border: 1px solid #d4d4d4; /* Gris claro */
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+button {
+  background-color: #6bd4fe; /* Azul claro */
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #55a9cf; /* Azul más oscuro */
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 15px; /* Reducimos el espacio superior */
+  text-decoration: none;
+  color: #ffb100; /* Amarillo */
+  font-size: 1.2em;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #e0a800; /* Amarillo más oscuro */
+}

@@ -1,0 +1,29 @@
+
+<section class="users_registro">
+  <h2 class="title">Registrate</h2>
+  <form [formGroup]="questForm">
+    <label for ="name">Name</label>
+    <input type="text" id="nombre" formControlName="nombre">
+
+    <label for ="apellido">Apellido</label>
+    <input type="text" id="apellido" formControlName="apellido">
+
+    <label for ="correoElectronico">Email</label>
+    <input type="text" id="correoElectronico" formControlName="correoElectronico">
+
+    <label for ="usuario">Usuario</label>
+    <input type="text" id="usuario" formControlName="usuario">
+
+    <label for ="contrasena">Contraseña</label>
+    <input type="text" id="contrasena" formControlName="contrasena">
+
+    <label for ="codigoPostal">Codigo Postal</label>
+    <input type="text" id="codigoPostal" formControlName="codigoPostal">
+
+    <label for ="direccion">Dirección</label>
+    <input type="text" id="direccion" formControlName="direccion">
+    <button type="submit" (click)="onSubmit()">Enviar</button>
+    </form>
+
+</section>
+

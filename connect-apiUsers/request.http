@@ -1,0 +1,21 @@
+##recuperar el hola muindo
+GET  http://localhost:3001
+
+###Recupera todos os usuários
+GET http://localhost:3001/users
+###Recupera um usuário
+GET http://localhost:3001/users/aina.rojas
+
+###Crea um usuário
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+   "nombre": "Salvador",
+      "apellido": "Doe",
+      "correoElectronico": "salvador@example.com",
+      "usuario": "salvador",
+      "contrasena": "123456",
+      "codigoPostal": "12345",
+      "direccion": "123 Main Street"
+}

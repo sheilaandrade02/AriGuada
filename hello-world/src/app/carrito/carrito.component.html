@@ -1,0 +1,17 @@
+
+<div>
+  <h2>Carrito de Compras</h2>
+  <div *ngFor="let item of carrito" class="carrito-item">
+    <img [src]="item.producto.image" alt="{{ item.producto.name }}">
+    <div class="text-container">
+      <h3>{{ item.producto.color }}</h3>
+      <p class="price">{{ item.producto.price | currency:'EUR':'symbol':'1.2-2' }}</p>
+      <p>Talla: {{ item.talla }}</p>
+      <p>Cantidad: {{ item.cantidad }}</p>
+    </div>
+    <button (click)="eliminarItem(item.producto.color, item.talla)" class="eliminar-btn">Eliminar</button>
+
+  </div>
+  <button (click)="realizarPago()" class="pagar-btn">Pagar</button>
+</div>
+

@@ -1,0 +1,99 @@
+/* Importa las fuentes Montserrat y Rock Salt desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Rock+Salt&display=swap');
+
+/* Aplica las fuentes al cuerpo del documento */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo del encabezado */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 58px; /* Reduzco la altura del encabezado */
+  width: 100%;
+  background-color: rgba(226, 226, 226, 0.961);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Agrego relleno a los lados */
+  font-weight: 800;
+}
+
+/* Estilo de los elementos de navegación */
+.nav_items {
+  color: black;
+  text-decoration: none;
+  margin: 5px; /* Reduzco el margen alrededor de nav_items */
+  padding: 8px 12px; /* Reduzco el relleno para hacer los enlaces más compactos */
+  font-weight: bold;
+  font-family:'Rock Salt',sans-serif;
+}
+
+/* Estilo del logo de la marca */
+.brand_logo {
+  margin: auto; /* Centra el logo */
+  width: 45px; /* Reduzco el tamaño del logo */
+  height: 50px;
+}
+
+/* Estilo de los elementos de medios (redes sociales, etc.) */
+.nav_media {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end; /* Muevo los elementos a la derecha */
+  margin-right: 20px;
+}
+
+/* Estilo del contenedor de medios */
+.media_container {
+  height: 40px; /* Reduzco el tamaño del contenedor de medios */
+  width: 40px; /* Reduzco el tamaño del contenedor de medios */
+  margin: 0 5px; /* Reduzco el espacio entre los elementos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+}
+
+/* Estilo de la introducción (si es necesario) */
+.intro {
+  position: fixed;
+  z-index: 2;
+}
+.footer {
+  background-color: rgba(226, 226, 226, 0.961);
+  color: #fff;
+  text-align: center;
+  padding: 5px; /* Reduzco el espacio de relleno */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilo de los elementos en el footer */
+.footer-icons {
+  display: flex;
+  justify-content: space-around; /* Alineo los elementos alrededor */
+}
+
+/* Estilo de los íconos de redes sociales en el footer */
+.footer-icons a {
+  text-decoration: none;
+  color: #000; /* Cambio el color del texto a negro */
+  margin: 0 10px; /* Aumento el espacio entre los íconos */
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo de los contenedores de medios en el footer */
+.footer-icons .footer_container {
+  height: 30px; /* Reduzco el tamaño de los contenedores de medios */
+  width: 30px; /* Reduzco el tamaño de los contenedores de medios */
+  border-radius: 50%;
+  filter: grayscale(100%); /* Convierto la imagen a blanco y negro */
+}
+

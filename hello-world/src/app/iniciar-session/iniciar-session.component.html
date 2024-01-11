@@ -1,0 +1,18 @@
+<section class="container">
+  <h2 class="title">Identificate</h2>
+
+  <form (ngSubmit)="onSubmit()" class="sesion_user">
+
+    <label class="login" for="user_name">Usuario</label>
+    <input [(ngModel)]="usuario" name="user_name" type="text" placeholder="usuario123"/>
+
+    <label class="login" for="user_password">Contraseña</label>
+    <input [(ngModel)]="contrasena" name="user_password" type="password"/>
+
+    <input type="submit" value="Inicar Session" />
+
+    <p id="errors_formulari"></p>
+  </form>
+
+  <a [routerLink]="['registro']" class="registro_user">No estás registrado? Regístrate.</a>
+</section>

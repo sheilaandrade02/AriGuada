@@ -1,0 +1,16 @@
+<div>
+  <section class="product-grid">
+    <div *ngFor="let product of products" class="product">
+      <img [src]="product.image" alt="{{ product.name }}">
+      <h3>{{ product.name }}</h3>
+      <p class="price">{{ product.price | currency:'EUR':'symbol':'1.2-2' }}</p>
+      <select (change)="onSizeChange($event)" class="select-size">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+      <button (click)="addToCart(product.color, selectedSize)" class="add-to-cart" [disabled]="!selectedSize">Añadir al carrito</button>
+    </div>
+  </section>
+</div>
