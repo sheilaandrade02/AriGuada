@@ -12,9 +12,9 @@ import { RouterModule } from '@angular/router';
 })
 export class TiendaComponent {
   products = [
-    { name: 'Producto 1', price: 20.00, image: 'assets/rosa.jpeg', color: 'rosa' },
-    { name: 'Producto 2', price: 20.00, image: 'assets/blanca.jpeg', color: 'blanca' },
-    { name: 'Producto 3', price: 20.00, image: 'assets/negra.jpeg', color: 'negra' },
+    { name: 'Camiseta Rosa', price: 20.00, image: 'assets/rosa.jpeg', color: 'rosa' },
+    { name: 'Camiseta Blanca', price: 20.00, image: 'assets/blanca.jpeg', color: 'blanca' },
+    { name: 'Camiseta Negra', price: 20.00, image: 'assets/negra.jpeg', color: 'negra' },
   ];
 
   selectedSize: string = ''; // Talla por defecto
